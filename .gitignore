@@ -1,0 +1,18 @@
+# Dependencies (reinstall with npm install)
+node_modules/
+
+# Angular build output and cache
+dist/
+.angular/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment / secrets
+.env
+.env.*
+
+# OS and editor files
+.DS_Store
+.idea/

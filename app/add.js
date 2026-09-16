@@ -1,4 +1,5 @@
 async function addProducts(products) {
+    // insertMany adds several documents in one call
     const result = await products.insertMany([
       {
         Id: 1,
@@ -25,8 +26,10 @@ async function addProducts(products) {
         type: "Stationery"
       }
     ]);
-  
+
+    // insertedCount tells  how many were added
     console.log(`Added ${result.insertedCount} products`);
   }
-  
+
+  // Export the function so app.js can use it
   module.exports = { addProducts };
