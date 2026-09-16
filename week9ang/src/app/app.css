@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: #222;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

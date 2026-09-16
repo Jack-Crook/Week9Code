@@ -1,0 +1,35 @@
+<div class="page">
+  <h1>Update product</h1>
+
+  <form (ngSubmit)="updateProduct()">
+    <label>
+      Id
+      <input name="Id" type="number" [(ngModel)]="product.Id" required />
+    </label>
+    <label>
+      Name
+      <input name="Name" [(ngModel)]="product.Name" maxlength="50" required />
+    </label>
+    <label>
+      Description
+      <input name="Description" [(ngModel)]="product.Description" maxlength="255" required />
+    </label>
+    <label>
+      Price
+      <input name="Price" type="number" step="0.01" [(ngModel)]="product.Price" required />
+    </label>
+    <label>
+      Units
+      <input name="units" type="number" [(ngModel)]="product.units" required />
+    </label>
+    <label>
+      Type
+      <input name="type" [(ngModel)]="product.type" />
+    </label>
+    <button type="submit">Save</button>
+  </form>
+
+  @if (message) {
+    <p class="message">{{ message }}</p>
+  }
+</div>
